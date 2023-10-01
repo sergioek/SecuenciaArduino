@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Explicación de Librerías | Inicio </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Edu" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-22"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header"  style="background-image: url(aula.jpeg); background-repeat: no-repeat;"><div id="headerContent">Inicio</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">¿QUE ES ARDUINO?</a></li>
+   <li><a href="conociendo_la_placa.html" class="no-ch">CONOCIENDO LA PLACA</a></li>
+   <li class="current-page-parent"><a href="clase_n1_encender_led.html" class="current-page-parent daddy">CLASE N°1 ENCENDER LED</a>
+   <ul>
+      <li><a href="informacion_importante.html" class="no-ch">Informacion Importante</a></li>
+      <li id="active"><a href="explicacin_de_libreras.html" class="active no-ch">Explicación de Librerías</a></li>
+   </ul>
+   </li>
+   <li><a href="clase_n2_semaforo.html" class="no-ch">CLASE N°2 SEMAFORO</a></li>
+   <li><a href="clase_n3_servo_motor.html" class="no-ch">Clase N°3 Servo motor</a></li>
+   <li><a href="clase_n4_sensor_ultrasonico.html" class="no-ch">CLASE N°4 Sensor Ultrasonico</a></li>
+   <li><a href="clase_n5_sensor_de_temperatura_y_humedad.html" class="no-ch">CLASE N°5 Sensor de temperatura y humedad</a></li>
+   <li><a href="clase_n7_sensor_bluetooth.html" class="no-ch">CLASE N°7 Sensor Bluetooth</a></li>
+   <li><a href="clase_n6_humedad_suelo.html" class="no-ch">CLASE N°6 Humedad Suelo</a></li>
+   <li><a href="clase_n8_sensor_pirr.html" class="no-ch">CLASE N°8 Sensor Pirr</a></li>
+   <li><a href="clase_n9_sensor_infrarrojo.html" class="no-ch">CLASE N°9 Sensor infrarrojo</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="informacion_importante.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="clase_n2_semaforo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Explicación de Librerías</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id42">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Librerias en Arduino</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta42_121_2" class="block iDevice_content">
+<div class="exe-text"><p>Una librería en informatica, son un conjunto de programas o instrucciones que facilitan el uso de un dispositivo. En arduino, éstas librerías nos ayudan a poder utilizar todas las funcionalidades de ciertos elementos y sensores.<img src="arduino-easy-comma.png" alt="" width="400" height="266" style="float: right;" /></p>
+<p>Librerías Al descargar e instalar en tu ordenador el entorno de desarrollo del Arduino (IDE), se incluyeron algunas librerías estándar con la instalación. Las librerías estándar son aquellas que el equipo de desarrollo de Arduino estimó que serían necesarias para los desarrollos de muchos usuarios.</p>
+<p>Estas librerías no se incluyen como opción por defecto en tus sketches, tienes que cargarlas una por una (aquellas que necesites). De esta manera se utilizan los recursos de memoria del Arduino con mayor eficiencia al cargar únicamente aquellas librerías que vas a usar en tu sketch.</p>
+<p>Para incluir un librería basta con añadir una declaración #include al comienzo del sketch. Por ejemplo, si quieres incluir la librería de cristal líquido, que se utiliza para exhibir datos en una pantalla LCD, basta con incluir la siguiente declaración al principio de tu sketch:</p>
+<pre>#include &lt;LiquidCrystal.h&gt;</pre></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id68">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">¡Error!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta68_122_2" class="block iDevice_content">
+<div class="exe-text"><p>Si alguna vez copiamos un codigo desde internet, vemos esta parte de codigo, quiere decir que estamos agregando una librería. Puede pasar que no tengamos ciertas librerías instaladas en el IDE de Arduino de nuestra computadora, entonces nos dará error, y no podremos ejecutar el programa.</p>
+<p><img src="libreria9.png" alt="" width="536" height="299" /></p>
+<p></p>
+<h5><strong><em>En los siguientes pasos te enseñaremos a instalar una libreria y te dejamos los recursos necesarios </em></strong></h5></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id69">
+<div class="iDevice emphasis0" >
+<div id="ta69_123_2" class="block iDevice_content">
+<div class="exe-text"><h1><em><strong><span style="font-size: 36pt; background-color: #ccffff;">SIN INTERNET</span></strong></em></h1></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FileAttachIdeviceInc em_iDevice em_iDevice_assignment" id="id64">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Importar librería de arduino desde archivo ZIP</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta64_83" class="block iDevice_content">
+<p><a id="TutorialLib"></a>1 - Debemos descargar el siguiente archivo y se guardará en nuestra carpeta de descargas</p>
+</div>
+<ul class='exeFileList'><li><a href='DHT-sensor-library-master.zip' target='_blank'>Librería en zip DHT11<span> (Ventana nueva)</span></a></li>
+</ul></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id65">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Paso 2 </h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta65_140_2" class="block iDevice_content">
+<div class="exe-text"><p>Nos dirigimos hacia esta pestaña en nuestro IDE de Arduino</p>
+<p><img src="libreria.png" alt="" width="748" height="594" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id67">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Paso 3</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta67_121_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="libreria4.png" width="1614" height="888" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_eng_reto" id="id70">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_reto.svg)"><h1 class="iDeviceTitle">¡Exito!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta70_124_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="libreria3.png" width="736" height="56" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Si en la parte inferior de nuestro IDE de Arduinonos aparece este mensaje, tuvimos exito con la instalación de nuestras librerías.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FileAttachIdeviceInc em_iDevice em_iDevice_assignment" id="id72">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Más librerías</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta72_83" class="block iDevice_content">
+<p>Te dejamos más librerías que te serviran durante el transcurso de este curso</p>
+<p></p>
+</div>
+<ul class='exeFileList'><li><a href='EduIntro-0.0.16.zip' target='_blank'>EduIntro-0.0.16.zip<span> (Ventana nueva)</span></a></li>
+</ul></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id74">
+<div class="iDevice emphasis0" >
+<div id="ta74_128_2" class="block iDevice_content">
+<div class="exe-text"><p><span style="font-size: 36pt; background-color: #ccffff;"><strong><em>CON INTERNET</em></strong></span></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id75">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Paso 1</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta75_129_2" class="block iDevice_content">
+<div class="exe-text"><p>Con internet, agregar una biblioteca es mucho más facíl. En nuestro IDE de Arduino :</p>
+<p><img src="libreria5.png" width="1472" height="588" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id76">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Paso 2</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta76_130_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="libreria6.png" alt="" width="1690" height="964" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id77">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Paso 3</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta77_131_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="libreria7.png" width="1780" height="1080" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_eng_reto" id="id78">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_reto.svg)"><h1 class="iDeviceTitle">¡Exito!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta78_132_2" class="block iDevice_content">
+<div class="exe-text"><p>Si seguimos los pasos correctamente, tendremos nuestras librerías de esta manera. ¡Felicidades, instalaste una librería de Arduino!</p>
+<p><img src="libreria8.png" alt="" width="1802" height="1080" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="informacion_importante.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="clase_n2_semaforo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Aula Movil
+</footer></div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

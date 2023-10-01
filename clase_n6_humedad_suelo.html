@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>CLASE N°6 Humedad Suelo | Inicio </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Edu" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-20"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header"  style="background-image: url(aula.jpeg); background-repeat: no-repeat;"><div id="headerContent">Inicio</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">¿QUE ES ARDUINO?</a></li>
+   <li><a href="conociendo_la_placa.html" class="no-ch">CONOCIENDO LA PLACA</a></li>
+   <li><a href="clase_n1_encender_led.html" class="daddy">CLASE N°1 ENCENDER LED</a>
+   <ul class="other-section">
+      <li><a href="informacion_importante.html" class="no-ch">Informacion Importante</a></li>
+      <li><a href="explicacin_de_libreras.html" class="no-ch">Explicación de Librerías</a></li>
+   </ul>
+   </li>
+   <li><a href="clase_n2_semaforo.html" class="no-ch">CLASE N°2 SEMAFORO</a></li>
+   <li><a href="clase_n3_servo_motor.html" class="no-ch">Clase N°3 Servo motor</a></li>
+   <li><a href="clase_n4_sensor_ultrasonico.html" class="no-ch">CLASE N°4 Sensor Ultrasonico</a></li>
+   <li><a href="clase_n5_sensor_de_temperatura_y_humedad.html" class="no-ch">CLASE N°5 Sensor de temperatura y humedad</a></li>
+   <li><a href="clase_n7_sensor_bluetooth.html" class="no-ch">CLASE N°7 Sensor Bluetooth</a></li>
+   <li id="active"><a href="clase_n6_humedad_suelo.html" class="active no-ch">CLASE N°6 Humedad Suelo</a></li>
+   <li><a href="clase_n8_sensor_pirr.html" class="no-ch">CLASE N°8 Sensor Pirr</a></li>
+   <li><a href="clase_n9_sensor_infrarrojo.html" class="no-ch">CLASE N°9 Sensor infrarrojo</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="clase_n7_sensor_bluetooth.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="clase_n8_sensor_pirr.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">CLASE N°6 Humedad Suelo</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id82">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Sensores de humedad en suelo</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta82_121_2" class="block iDevice_content">
+<div class="exe-text"><p>Para este circuito vamos a necesitar</p>
+<p>protoboard: <img src="circuit-electronics-power-co-half-size-breadboard-digilent-5babaeffaf85b5.8782552615379781117189.png" alt="" width="60" height="60" style="vertical-align: middle;" /></p>
+<p>Sensor FC – 28 :<img src="hIGOMe2.jpg" width="60" height="286" style="vertical-align: middle;" /></p>
+<p>Placa Arduino uno :<img src="arduino.png" width="81" height="57" style="vertical-align: middle;" /></p>
+<p>Cable dupont: <img src="cable-dupont-jumpers-m-m-20cm-arduino-suelto.jpg" alt="" width="67" height="67" style="vertical-align: middle;" /></p>
+<p>En esta clase, aprenderemos a programar un sensor para medir la humedad del suelo con la placa Arduino. Podrás utilizarlo para mantener un control adecuado de la humedad en nuestras plantas.</p>
+<p>Éste es el circuito </p>
+<p><img src="circuito-sensor-1024x759-1-e1585941000879.png" alt="" width="710" height="500" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id83">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Paso 2 - Programar nuestro sensor de humedad</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta83_122_2" class="block iDevice_content">
+<div class="exe-text"><p>El codigo es muy sencillo, copia y pega el siguiente codigo en tu IDE de Arduino. <span style="color: #ff0000;">(Letras rojas)</span></p>
+<table border="1" style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 100%;"><span style="color: #ff0000;">int SensorPin = A0;</span><br /><span style="color: #ff0000;">void setup() {</span><br /><span style="color: #ff0000;">Serial.begin(9600);</span><br /><span style="color: #ff0000;">}</span><br /><span style="color: #ff0000;">void loop() { </span><br /><span style="color: #ff0000;">int humedad = analogRead(SensorPin);</span><br /><span style="color: #ff0000;">Serial.println(humedad);</span><br /><span style="color: #ff0000;">delay(1000);</span><br /><span style="color: #ff0000;">}</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id84">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Paso 3 - Ver resultados</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta84_123_2" class="block iDevice_content">
+<div class="exe-text"><p>Deberás abrir el monitor serie para ver los resultados de nuestro codigo.</p>
+<p><img src="higoc2.jpg" alt="" width="704" height="556" /></p>
+<p>Y verás una escala de variables como ésta, actualizandose cada 1 segundo como lo indicamos en la programación.</p>
+<p><img src="higoc.jpg" width="1342" height="798" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_exp_competenciadigital" id="id94">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_competenciadigital.svg)"><h1 class="iDeviceTitle">¡Te reto!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta94_121_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li><em><strong>Te reto a que con el código que ya tenemos, lo modifiques para que el tiempo de actualización sea de 5 segundos</strong></em></li>
+<li><em><strong>Y también, que cuando la humedad del suelo baje a xn, se encienda un led color rojo.</strong></em></li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="clase_n7_sensor_bluetooth.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="clase_n8_sensor_pirr.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Aula Movil
+</footer></div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

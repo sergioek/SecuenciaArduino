@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>CONOCIENDO LA PLACA | Inicio </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Edu" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-1"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header"  style="background-image: url(aula.jpeg); background-repeat: no-repeat;"><div id="headerContent">Inicio</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">¿QUE ES ARDUINO?</a></li>
+   <li id="active"><a href="conociendo_la_placa.html" class="active no-ch">CONOCIENDO LA PLACA</a></li>
+   <li><a href="clase_n1_encender_led.html" class="daddy">CLASE N°1 ENCENDER LED</a>
+   <ul class="other-section">
+      <li><a href="informacion_importante.html" class="no-ch">Informacion Importante</a></li>
+      <li><a href="explicacin_de_libreras.html" class="no-ch">Explicación de Librerías</a></li>
+   </ul>
+   </li>
+   <li><a href="clase_n2_semaforo.html" class="no-ch">CLASE N°2 SEMAFORO</a></li>
+   <li><a href="clase_n3_servo_motor.html" class="no-ch">Clase N°3 Servo motor</a></li>
+   <li><a href="clase_n4_sensor_ultrasonico.html" class="no-ch">CLASE N°4 Sensor Ultrasonico</a></li>
+   <li><a href="clase_n5_sensor_de_temperatura_y_humedad.html" class="no-ch">CLASE N°5 Sensor de temperatura y humedad</a></li>
+   <li><a href="clase_n7_sensor_bluetooth.html" class="no-ch">CLASE N°7 Sensor Bluetooth</a></li>
+   <li><a href="clase_n6_humedad_suelo.html" class="no-ch">CLASE N°6 Humedad Suelo</a></li>
+   <li><a href="clase_n8_sensor_pirr.html" class="no-ch">CLASE N°8 Sensor Pirr</a></li>
+   <li><a href="clase_n9_sensor_infrarrojo.html" class="no-ch">CLASE N°9 Sensor infrarrojo</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="clase_n1_encender_led.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">CONOCIENDO LA PLACA</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id1">
+<div class="iDevice emphasis0" >
+<div id="ta1_122_2" class="block iDevice_content">
+<div class="exe-text"><p><span style="font-size: 12pt;">Arduino es una plataforma de <em><strong>desarrollo Hardware</strong></em> que cuenta con pines E/S para comunicarse con el exterior. Estos pines E/S tienen características especiales que los hacen propicios para una u otra tarea en función del tipo de pin. Estas E/S pueden englobarse en 3 tipos básicos, <em><strong>E/S analógicas</strong></em>,<em><strong> E/S digitales </strong></em>y<em><strong> E/S</strong></em> para la comunicación serie. Existen también pines de propósito especiales como salidas de reloj u osciladores y pines de alimentación con los que podemos suministrar diferentes tensiones a placas externas.</span></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_reflection" id="id2">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">POWER, INPUTS AND OUTPUTS</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta2_123_2" class="block iDevice_content">
+<div class="exe-text"><p><span style="font-size: 10pt;">Pines de alimentation (<em><strong>Power Pins</strong></em>)</span><br /><span style="font-size: 10pt;"><img src="placapower.jpg" alt="Pines de alimentacion" title="Pines1" width="410" height="322" style="display: block; margin-left: auto; margin-right: auto;" /></span><br /><span style="font-size: 10pt;">Bien alimentemos al arduino mediante la conexión USB o mediante una fuente externa (recomendada de 7-12V), vamos a tener unas salidas de tensión continua debido a unos reguladores de tensión y condensadores de estabilización.</span><br /><span style="font-size: 10pt;">Estos pines son:</span></p>
+<ul>
+<li><span style="font-size: 10pt;"> <strong>VIN</strong>: se trata de la fuente tensión de entrada que contendrá la tensión a la que estamos alimentando al Arduino mediante la fuente externa.</span></li>
+<li><span style="font-size: 10pt;"><strong>5V</strong>: fuente de tensión regulada de 5V, esta tensión puede venir ya sea de pin VIN a través de un regulador interno, o se suministra a través de USB o de otra fuente de 5V regulada.</span></li>
+<li><span style="font-size: 10pt;"> <strong>3.3V</strong>: fuente de 3.3 voltios generados por el regulador interno con un consumo máximo de corriente de 50mA.</span></li>
+<li><span style="font-size: 10pt;"><strong>GND:</strong> pines de tierra.</span></li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_reflection" id="id3">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">DIGITAL INPUTS/OUTPUTS.</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta3_124_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="placaoutput.jpg" alt="Placa" title="output" width="410" height="322" style="display: block; margin-left: auto; margin-right: auto;" /><br /><span style="font-size: 10pt;">Cada uno de los 14 pines digitales se puede utilizar como una entrada o salida. Cada pin puede proporcionar o recibir un máximo de 40 mA y tiene una resistencia de pull-up (desconectado por defecto) de 20 a 50 kOhm. Además, algunos pines tienen funciones especializadas como:</span></p>
+<ul>
+<li><span style="font-size: 10pt;"> <em><strong>Pin 0 (RX) y 1 (TX)</strong></em>. Se utiliza para recibir (RX) y la transmisión (TX) de datos serie TTL.</span></li>
+<li><span style="font-size: 10pt;"><strong><em>Pin 2 y 3</em></strong>. Interrupciones externas. Se trata de pines encargados de interrumpir el programa secuencial establecido por el usuario.</span></li>
+<li><span style="font-size: 10pt;"><strong><em>Pin 3, 5, 6, 9, 10 y 11</em></strong>. PWM (modulación por ancho de pulso).Constituyen 8 bits de salida PWM con la función analogWrite ().</span></li>
+<li><span style="font-size: 10pt;"><em><strong>Pin 10 (SS), 11 (MOSI), 12 (MISO), 13 (SCK)</strong></em>. Estos pines son de apoyo a la comunicación SPI.</span></li>
+<li><span style="font-size: 10pt;"><em><strong>Pin 13. LED.</strong></em> Hay un LED conectado al pin digital 13. Cuando el pin es de alto valor, el LED está encendido, cuando el valor está bajo, es apagado.</span></li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_reflection" id="id4">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">ANALOG INPUTS</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta4_125_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="placainput.jpg" alt="input" title="input" width="410" height="322" style="display: block; margin-left: auto; margin-right: auto;" /><span style="font-size: 10pt;">El Arduino posee 6 entradas analógicas, etiquetadas desde la A0 a A5, cada una de las cuales ofrecen 10 bits de resolución (es decir, 1024 estados). Por defecto, tenemos una tensión de 5V, pero podemos cambiar este rango utilizando el pin de AREF y utilizando la función analogReference(), donde le introducimos una señal externa de continua que la utilizara como referencia.</span></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="clase_n1_encender_led.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Aula Movil
+</footer></div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

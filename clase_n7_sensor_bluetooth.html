@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>CLASE N°7 Sensor Bluetooth | Inicio </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Edu" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-21"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header"  style="background-image: url(aula.jpeg); background-repeat: no-repeat;"><div id="headerContent">Inicio</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">¿QUE ES ARDUINO?</a></li>
+   <li><a href="conociendo_la_placa.html" class="no-ch">CONOCIENDO LA PLACA</a></li>
+   <li><a href="clase_n1_encender_led.html" class="daddy">CLASE N°1 ENCENDER LED</a>
+   <ul class="other-section">
+      <li><a href="informacion_importante.html" class="no-ch">Informacion Importante</a></li>
+      <li><a href="explicacin_de_libreras.html" class="no-ch">Explicación de Librerías</a></li>
+   </ul>
+   </li>
+   <li><a href="clase_n2_semaforo.html" class="no-ch">CLASE N°2 SEMAFORO</a></li>
+   <li><a href="clase_n3_servo_motor.html" class="no-ch">Clase N°3 Servo motor</a></li>
+   <li><a href="clase_n4_sensor_ultrasonico.html" class="no-ch">CLASE N°4 Sensor Ultrasonico</a></li>
+   <li><a href="clase_n5_sensor_de_temperatura_y_humedad.html" class="no-ch">CLASE N°5 Sensor de temperatura y humedad</a></li>
+   <li id="active"><a href="clase_n7_sensor_bluetooth.html" class="active no-ch">CLASE N°7 Sensor Bluetooth</a></li>
+   <li><a href="clase_n6_humedad_suelo.html" class="no-ch">CLASE N°6 Humedad Suelo</a></li>
+   <li><a href="clase_n8_sensor_pirr.html" class="no-ch">CLASE N°8 Sensor Pirr</a></li>
+   <li><a href="clase_n9_sensor_infrarrojo.html" class="no-ch">CLASE N°9 Sensor infrarrojo</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="clase_n5_sensor_de_temperatura_y_humedad.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="clase_n6_humedad_suelo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">CLASE N°7 Sensor Bluetooth</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id89">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Modulo Bluetooth HC-05</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta89_121_2" class="block iDevice_content">
+<div class="exe-text"><p>El Módulo Bluetooth HC-05 es un dispositivo que soporta conexiones inalámbricas a través del protocolo “Bluetooth”.</p>
+<p>Que vamos a necesitar en esta clase</p>
+<p>Placa Arduino <img src="arduino.png" alt="" width="60" height="42" style="vertical-align: middle;" /></p>
+<p>cable dupont <img src="cable-dupont-jumpers-m-m-20cm-arduino-suelto.jpg" alt="" width="60" height="60" style="vertical-align: middle;" /></p>
+<p>HC-05 Bluetooth <img src="bt_2.JPG" alt="" width="60" height="45" style="vertical-align: middle;" /></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FileAttachIdeviceInc em_iDevice em_iDevice_assignment" id="id93">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Recursos para esta clase</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta93_83" class="block iDevice_content">
+<p>Este archivo contiene un apk (un instalador para tu telefono, podes pasarlo con USB a tu telefono e instalarlo) en el cual podremos enviar información de nuestros diferentes sensores.</p>
+<p></p>
+</div>
+<ul class='exeFileList'><li><a href='p40_movil_a_arduino (1).apk' target='_blank'>Apk de prueba<span> (Ventana nueva)</span></a></li>
+</ul></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id90">
+<div class="iDevice emphasis0" >
+<div id="ta90_122_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="bt.JPG" width="1441" height="701" style="vertical-align: middle; display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id91">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Programando el sensor bluetooth</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta91_123_2" class="block iDevice_content">
+<div class="exe-text"><table border="1" style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<pre><span style="color: #ff0000; font-size: 12pt;">char val;</span><br /><span style="color: #ff0000; font-size: 12pt;">void setup() { </span><br /><span style="color: #ff0000; font-size: 12pt;">Serial.begin(9600);</span><br /><span style="color: #ff0000; font-size: 12pt;">}</span><br /><span style="color: #ff0000; font-size: 12pt;">void loop() { </span><br /><span style="color: #ff0000; font-size: 12pt;">if( Serial.available() ) {</span><br /><span style="color: #ff0000; font-size: 12pt;">val = Serial.read();</span><br /><br /><span style="color: #ff0000; font-size: 12pt;">if( val == '0' )</span><br /><span style="color: #ff0000; font-size: 12pt;">{ </span><br /><br /><span style="color: #ff0000; font-size: 12pt;">}</span><br /><br /><span style="color: #ff0000; font-size: 12pt;">if( val == '1' )</span><br /><span style="color: #ff0000; font-size: 12pt;">{ </span><br /><br /><span style="color: #ff0000; font-size: 12pt;">} </span><br /><span style="color: #ff0000; font-size: 12pt;">if( val == '2' )</span><br /><span style="color: #ff0000; font-size: 12pt;">{ </span><br /><br /><span style="color: #ff0000; font-size: 12pt;">}</span><br /><br /><span style="color: #ff0000; font-size: 12pt;">if( val == '3' )</span><br /><span style="color: #ff0000; font-size: 12pt;">{ </span><br /><br /><span style="color: #ff0000; font-size: 12pt;">} </span><br /><span style="color: #ff0000; font-size: 12pt;">} </span><br /><span style="color: #ff0000; font-size: 12pt;">}</span></pre>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id100">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">¡Tarea!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta100_125_2" class="block iDevice_content">
+<div class="exe-text"><p>Ahora, solo debes agregarle una luz led, a cada <strong><em>If </em></strong>de nuestro codigo de Arduino, para que puedas encenderlo y apagarlo desde tu telefono</p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="clase_n5_sensor_de_temperatura_y_humedad.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="clase_n6_humedad_suelo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Aula Movil
+</footer></div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

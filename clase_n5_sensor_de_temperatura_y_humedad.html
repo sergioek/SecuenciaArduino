@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>CLASE N°5 Sensor de temperatura y humedad | Inicio </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Edu" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-19"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header"  style="background-image: url(aula.jpeg); background-repeat: no-repeat;"><div id="headerContent">Inicio</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">¿QUE ES ARDUINO?</a></li>
+   <li><a href="conociendo_la_placa.html" class="no-ch">CONOCIENDO LA PLACA</a></li>
+   <li><a href="clase_n1_encender_led.html" class="daddy">CLASE N°1 ENCENDER LED</a>
+   <ul class="other-section">
+      <li><a href="informacion_importante.html" class="no-ch">Informacion Importante</a></li>
+      <li><a href="explicacin_de_libreras.html" class="no-ch">Explicación de Librerías</a></li>
+   </ul>
+   </li>
+   <li><a href="clase_n2_semaforo.html" class="no-ch">CLASE N°2 SEMAFORO</a></li>
+   <li><a href="clase_n3_servo_motor.html" class="no-ch">Clase N°3 Servo motor</a></li>
+   <li><a href="clase_n4_sensor_ultrasonico.html" class="no-ch">CLASE N°4 Sensor Ultrasonico</a></li>
+   <li id="active"><a href="clase_n5_sensor_de_temperatura_y_humedad.html" class="active no-ch">CLASE N°5 Sensor de temperatura y humedad</a></li>
+   <li><a href="clase_n7_sensor_bluetooth.html" class="no-ch">CLASE N°7 Sensor Bluetooth</a></li>
+   <li><a href="clase_n6_humedad_suelo.html" class="no-ch">CLASE N°6 Humedad Suelo</a></li>
+   <li><a href="clase_n8_sensor_pirr.html" class="no-ch">CLASE N°8 Sensor Pirr</a></li>
+   <li><a href="clase_n9_sensor_infrarrojo.html" class="no-ch">CLASE N°9 Sensor infrarrojo</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="clase_n4_sensor_ultrasonico.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="clase_n7_sensor_bluetooth.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">CLASE N°5 Sensor de temperatura y humedad</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_destacado" id="id55">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_destacado.svg)"><h1 class="iDeviceTitle">DHT11 Sensor de temperatura</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta55_130_2" class="block iDevice_content">
+<div class="exe-text"><p>Para este circuito vamos a necesitar:</p>
+<ul>
+<li>Sensor DHT11 <img src="sensor-de-temperatura-y-humedad-dht11-arduino.jpg" width="69" height="75" style="vertical-align: middle;" /></li>
+<li>Placa Arduino <img src="arduino.png" width="101" height="71" style="vertical-align: middle;" /></li>
+<li>Cables dupont <img src="cable-dupont-jumpers-m-m-20cm-arduino-suelto.jpg" alt="" width="83" height="83" style="vertical-align: middle;" /></li>
+<li>Led<img src="D_NQ_NP_933629-MLA51150367373_082022-W.jpg" width="47" height="99" style="vertical-align: middle;" /></li>
+</ul>
+<p>El DHT11 es un sensor de temperatura y humedad que utiliza un sensor capacitivo de humedad y un termistor para medir el aire circundante, y muestra los datos mediante una señal digital en el pin de datos.</p>
+<p>Lo primero que vamos a hacer, es conectar el sensor a los pines correspondientes</p>
+<p><img src="WhatsApp_Image_2023-04-19_at_11.40.24_(1).jpeg" width="888" height="1185" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FileAttachIdeviceInc em_iDevice em_iDevice_assignment" id="id79">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">¡Atención!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta79_83" class="block iDevice_content">
+<h6><span style="font-size: 14pt;">Éste sensor, necesita una librería especifica para funcionar, te invitamos a ver el tutorial de <a href="explicacin_de_libreras.html">como instalar una librería en el IDE de Arduino</a></span></h6>
+<p></p>
+</div>
+<ul class='exeFileList'><li><a href='DHT-sensor-library-master.zip' target='_blank'>DHT_ssensor-library-master.zip<span> (Ventana nueva)</span></a></li>
+</ul></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_redessemanticas" id="id56">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_redessemanticas.svg)"><h1 class="iDeviceTitle">Paso 2 - Programar el sensor de temperatura</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta56_131_2" class="block iDevice_content">
+<div class="exe-text"><p>Copiando el siguiente codigo <span style="color: #ff0000;"><strong><em>(letras rojas)</em></strong></span> en tu IDE de Arduino, y pulsando "" en tu computadora.</p>
+<table border="1" style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><span style="font-size: 16.8px; color: #ff0000;"><span style="font-family: Atkinson Hyperlegible, Arial, Helvetica, sans-serif;">#include &lt;EduIntro.h&gt;</span></span></p>
+<p><span style="color: #ff0000;">#include &lt;DHT.h&gt;</span><br /><span style="color: #ff0000;">#define DHTPIN 5</span><br /><span style="color: #ff0000;">#define DHTTYPE DHT11</span></p>
+<p><br /><span style="color: #ff0000;">DHT dht(DHTPIN, DHTTYPE);</span><br /><span style="color: #ff0000;"> </span><br /><span style="color: #ff0000;">void setup() {</span><br /><span style="color: #ff0000;">  </span><br /><span style="color: #ff0000;">  Serial.begin(9600);</span><br /><span style="color: #ff0000;">  dht.begin();</span><br /><span style="color: #ff0000;"> </span><br /><span style="color: #ff0000;">}</span><br /><span style="color: #ff0000;"> </span><br /><span style="color: #ff0000;">void loop() {</span><br /><span style="color: #ff0000;">    </span><br /><span style="color: #ff0000;">  delay(2000);</span><br /><span style="color: #ff0000;">  </span><br /><span style="color: #ff0000;">  float h = dht.readHumidity();</span><br /><span style="color: #ff0000;">  float t = dht.readTemperature();</span><br /><span style="color: #ff0000;"> ;</span><br /><span style="color: #ff0000;"> </span><br /><span style="color: #ff0000;">  if (isnan(h) || isnan(t) ) {</span><br /><span style="color: #ff0000;">    Serial.println("Error obteniendo los datos del sensor DHT11");</span><br /><span style="color: #ff0000;">    return;</span><br /><span style="color: #ff0000;">  }</span><br /><span style="color: #ff0000;"> </span><br /><span style="color: #ff0000;">  Serial.print("Humedad: ");</span><br /><span style="color: #ff0000;">  Serial.print(h);</span><br /><span style="color: #ff0000;">  Serial.print(" %\t");</span><br /><span style="color: #ff0000;">  Serial.print("Temperatura: ");</span><br /><span style="color: #ff0000;">  Serial.print(t);</span><br /><span style="color: #ff0000;">  Serial.print(" *C\n");</span></p>
+<p><br /><span style="color: #ff0000;">}<span style="font-family: Atkinson Hyperlegible, Arial, Helvetica, sans-serif;"></span></span></p>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_apoyovisual" id="id59">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_apoyovisual.svg)"><h1 class="iDeviceTitle">A tener en cuenta</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta59_134_2" class="block iDevice_content">
+<div class="exe-text"><p>Para poder ver los datos que nos entrega nuestro sensor de temperatura debemos realizar los siguientes pasos</p>
+<p><img src="serie.jpg" alt="" width="1126" height="800" /></p>
+<h1>Paso 2</h1>
+<p>Luego debe aparecernos la siguiente ventana, en la que seleccionamos las siguientes opciones</p>
+<p><img src="serie_2.jpg" alt="" width="1307" height="808" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_caso" id="id60">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_caso.svg)"><h1 class="iDeviceTitle">¡Ahora si!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta60_135_2" class="block iDevice_content">
+<div class="exe-text"><p>Si seguiste los pasos correctamente deberías ver los valores de temperatura en pantalla </p>
+<p><img src="h.png" alt="" width="1252" height="664" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_udl_rep_lee" id="id81">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_lee.svg)"><h1 class="iDeviceTitle">Tarea</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta81_135_2" class="block iDevice_content">
+<div class="pbl-task-description"><p>Como tarea, deberán programar el sensor para que cuando la <em><strong>temperatura sea menor a 25°</strong></em>, se encienda un led color rojo.<strong><em> De lo contrario</em></strong>, debería encenderse un led color verde. Recuerda utilzar los conocimientos de las clases pasadas <strong>(Condicional <em>If</em>)</strong></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="clase_n4_sensor_ultrasonico.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="clase_n7_sensor_bluetooth.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Aula Movil
+</footer></div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

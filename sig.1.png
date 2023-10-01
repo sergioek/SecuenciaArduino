@@ -1,0 +1,22 @@
+<div id="content">
+<div id="main-wrapper">
+<section id="main">
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id14">
+<div class="iDevice emphasis1"><header class="iDevice_header">
+<h1 class="iDeviceTitle">Actividad</h1>
+</header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta14_46_2" class="block iDevice_content">
+<ul>
+<li>Cambia en el programa los tiempos de encendido y apagado .</li>
+<li>modifica en el circuito el pin 13 por el pin12 y cambia la estructura del programa para que funcione no olvides presionar <img src="sig.1.png" width="25" height="22" style="vertical-align: middle;" />  para cargar el programa modificado en la placa.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+</div>
+</div>
